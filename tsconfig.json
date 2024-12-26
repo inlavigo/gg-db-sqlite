@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+
+    /* Distribution */
+    "rootDir": "src",
+    "outDir": "dist",
+    "declarationDir": "dist/types",
+    "declaration": true,
+    "noEmitOnError": true,
+    "emitDeclarationOnly": false,
+    "esModuleInterop": true,
+
+    /* Bundler mode */
+    "moduleResolution": "node",
+    // "allowImportingTsExtensions": true,
+    "isolatedModules": false,
+    "moduleDetection": "force",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "../test/test-setup.ts",
+    "../test/gg-json-hash.spec.ts"
+  ],
+  "exclude": ["../test-setup.ts"]
+}

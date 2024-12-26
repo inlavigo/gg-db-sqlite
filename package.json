@@ -1,0 +1,49 @@
+{
+  "name": "gg-db-sqlite",
+  "version": "0.0.1",
+  "description": "The project `GgDbLite` offers an Sqlite implementation of `GgDb`.",
+  "license": "MIT",
+  "author": "Dr. Gabriel Gatzsche",
+  "main": "dist/gg-db-sqlite.js",
+  "module": "dist/gg-db-sqlite.es.js",
+  "umd": "dist/gg-db-sqlite.umd.js",
+  "cjs": "dist/gg-db-sqlite.cjs.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "example/src",
+    "example/package.json",
+    "example/tsconfig.json",
+    "example/README.md"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "vite build && tsc",
+    "prepare": "npm run build",
+    "test": "npx vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inlavigo/gg-db-sqlite-js.git"
+  },
+  "keywords": [
+    "gg",
+    "database",
+    "db",
+    "SQL"
+  ],
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "^2.1.8",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.3",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^2.1.8",
+    "vitest-dom": "^0.1.1",
+    "vitest-fetch-mock": "^0.4.3"
+  },
+  "dependencies": {
+    "gg-db-js": "^0.0.1"
+  }
+}

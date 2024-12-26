@@ -1,0 +1,21 @@
+{
+  "name": "gg-db-sqlite-example",
+  "version": "1.0.0",
+  "main": "gg-db-sqlite-example.js",
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "chmod +x dist/gg-db-sqlite-example.js"
+  },
+  "bin": {
+    "gg-db-sqlite-example": "dist/gg-db-sqlite-example.js"
+  },
+  "author": "Dr. Gabriel Gatzsche",
+  "license": "MIT",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "gg-db-sqlite": "..",
+    "typescript": "^5.7.2",
+    "vite-node": "^2.1.8"
+  }
+}
